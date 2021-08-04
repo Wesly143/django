@@ -1,0 +1,151 @@
+{% extends 'base.html' %}
+
+{% block title %}Home {% endblock title %}
+
+{% block body %}
+
+
+<div class="container-fluid px-0" >
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+        <img src="../static/panel1.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+        <img src="../static/panel-2.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+        <img src="../static/panel-3.jpg" class="d-block w-100" alt="...">
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+    </div>
+</div>
+
+<div class="album py-5 bg-dark">
+
+
+    <div class="container">
+      <h1 class="my-1 text-center  text-decoration-underline" style="color: green">Dashboard- find your Favs!!</h1>
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+           <img src="https://source.unsplash.com/1600x900/?html">
+            
+            <div class="card-body">
+              <h3 class="text-center">HTML-5</h3>
+              <p class="text-center"><b>Hyper Text Markup Language</b></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary" ><a href="https://www.codewithharry.com/blogpost/html-cheatsheet">View</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://source.unsplash.com/1600x900/?python">
+
+            <div class="card-body">
+              <h3 class="text-center">PYTHON</h3>
+              <p class="text-center"><b>The most powerful programming Language</b></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary"><a href="https://www.codewithharry.com/blogpost/python-cheatsheet">View</a></button>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="https://source.unsplash.com/1600x900/?machine">
+
+            <div class="card-body">
+              <h3 class="text-center">JAVA</h3>
+              <p class="text-center"><b>Conquer the world.</b></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary"><a href="https://www.codewithharry.com/blogpost/java-cheatsheet">View</a></button>
+                  
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="../static/IM-1.png">
+
+            <div class="card-body">
+              <h3 class="text-center">Iron Man-1</h3>
+              <p class="text-center"><b>The Start Of GOATS's ERA</b></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary"><a href="https://dubox.com/s/1vW8ZcYomOORhCtFIxEcu3Q">View</a></button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="../static/IM-2.jpg">
+
+            <div class="card-body">
+              <h3 class="text-center">Iron Man-2</h3>
+              <p class="text-center"><b>The Smartest Avenger</b></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary"><a href="https://dubox.com/s/1-o9bNn5x5GC0Nkn2QR4Ydg">View</a></button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="../static/IM-3.jpg">
+
+            <div class="card-body">
+              <h3 class="text-center">Iron Man-3</h3>
+              <p class="text-center"><b>Start From ENd Again!</b></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary"><a href="https://dubox.com/s/1LLzDzEHv6Qtw3ddAnSeb1Q">View</a></button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+</div>
+   
+
+{% endblock body %}
