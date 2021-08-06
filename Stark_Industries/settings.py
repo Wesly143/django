@@ -25,7 +25,12 @@ SECRET_KEY = 'django-insecure-iolaa8ff#e!192krynna*n_a0(o3hl1!99w(cnqb8bk)2z*d^@
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['Wesly.pythonanywhere.com', 'weslycodemonkey.com', '127.0.0.1', 'www.wesly.pythonanywhere.com', 'wesly.pythonanywhere.com']
+ALLOWED_HOSTS = ['Wesly.pythonanywhere.com', 
+'weslycodemonkey.com', 
+ 'www.wesly.pythonanywhere.com', 
+ 'wesly.pythonanywhere.com',
+ 'www.weslycosta.com',
+]
 
 
 # Application definition
