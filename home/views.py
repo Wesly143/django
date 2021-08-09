@@ -19,3 +19,14 @@ def contact(request):
         contact.save()
         messages.success(request, 'Sent Successfully!!')
     return render(request, 'contact.html')
+
+
+def code(request):
+    return render(request, 'code.html')
+
+
+def note(request):
+    return render(request, 'note.html')
+
+def movie(request):
+    return render(request, 'movie.html')

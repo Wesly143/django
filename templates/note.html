@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+{% block title %}Notes! |{% endblock title %}
+
+{% block body %}
+
+<div class="head bg-light">
+<h1 class="my-1 text-center  text-decoration-underline" style="color: purple">Movies</h1>
+</div>
+
+
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+
+
+    <div class="col">
+          <div class="card shadow-sm">
+            <img src="../static/math.jpg" width="100%" height="200px">
+
+            <div class="card-body">
+              <h3 class="text-center">Math-B</h3>
+              <p class="text-center"><b>Past Question Papers</b></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary"><a href="https://www.shawonnotes.com/index.php/edexcel-past-papers/mathematics-b/international-gcse/" target=”_blank”>View</a></button>
+                  
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+         <div class="col">
+          <div class="card shadow-sm">
+            <img src="../static/pm.jpg" width="100%" height="200px">
+
+            <div class="card-body">
+              <h3 class="text-center">Pure-Math</h3>
+              <p class="text-center"><b>Past Question Papers</b></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary"><a href="https://drive.google.com/drive/u/0/mobile/folders/1tZoT787R1aqB7tIn0HbvSdB0-kmu7Liy?usp=drive_open" target=”_blank”>View</a></button>
+                  
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        
+
+</div>
+
+
+{% endblock body %}

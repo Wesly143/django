@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+
+{% block title %}Code| {% endblock title %}
+
+
+
+{% block body %}
+<div class="head bg-light">
+<h1 class="my-1 text-center  text-decoration-underline" style="color: purple">Movies</h1>
+</div>
+
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col">
+          <div class="card shadow-sm">
+           <img src="../static/html.jpg" width="100%" height="200px">
+            
+            <div class="card-body">
+              <h3 class="text-center">HTML-5</h3>
+              <p class="text-center"><b>Hyper Text Markup Language</b></p>
+              <p class="text-center"><b>MarkUp Language</b></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary" ><a href="https://www.codewithharry.com/blogpost/html-cheatsheet" target=”_blank”>View</a></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="../static/python.jpg">
+
+            <div class="card-body">
+              <h3 class="text-center">PYTHON</h3>
+              <p class="text-center"><b>The most powerful programming Language</b></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary"><a href="https://www.codewithharry.com/blogpost/python-cheatsheet" target=”_blank”>View</a></button>
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col">
+          <div class="card shadow-sm">
+            <img src="../static/java.jpg">
+
+            <div class="card-body">
+              <h3 class="text-center">JAVA</h3>
+              <p class="text-center"><b>
+                Java is a high-level, class-based, 
+                object-oriented programming language.
+              </b></p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary"><a href="https://www.codewithharry.com/blogpost/java-cheatsheet" target=”_blank”>View</a></button>
+                  
+                </div>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+{% endblock body %}
