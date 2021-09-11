@@ -12,6 +12,34 @@
 
 
   <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+
+  
+          {% for Program in alpost %}
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="https://source.unsplash.com/1600x900/?{{Program.image}}">
+
+                <div class="card-body">
+                  <h3 class="text-center">{{Program.head}}</h3>
+                  ---------------------------------------------
+                  <h3 class="text-center">{{Program.strap}}</h3>
+                  <p class="text-center"><b>
+                    {{Program.desc}}
+                  </b></p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-outline-secondary"><a href="{{Program.link}}" target=”_blank”>View</a></button>
+                      
+                    </div>
+                    <small class="text-muted">Updated: {{Program.date}}</small>
+                    
+                  </div>
+                </div>
+              </div>
+          </div>
+          {% endfor %}
+
+          
             <div class="col">
               <div class="card shadow-sm">
               <img src="../static/html.jpg" width="100%" height="200px">
@@ -264,6 +292,7 @@
                 </div>
               </div>
           </div>
+
   </div>
 
 {% endblock body %}

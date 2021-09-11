@@ -2,6 +2,9 @@ from django.shortcuts import render
 from datetime import date, datetime
 from home.models import Contact
 from django.contrib import messages
+from home.models import Program
+from home.models import Note
+
 # Create your views here.
 def index(request):
     return render(request, 'index.html')
@@ -22,11 +25,15 @@ def contact(request):
 
 
 def code(request):
-    return render(request, 'code.html')
+    alpost = Program.objects.all()
+    context = {'alpost': alpost}
+    return render(request, 'code.html', context)
 
 
 def note(request):
-    return render(request, 'note.html')
+    allnotes = Note.objects.all()
+    context = {'allnotes': allnotes}
+    return render(request, 'note.html', context)
 
 def movie(request):
     return render(request, 'movie.html')
