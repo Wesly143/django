@@ -36,4 +36,6 @@ def note(request):
     return render(request, 'note.html', context)
 
 def movie(request):
-    return render(request, 'movie.html')
+    allmovies = Movie.objects.all()
+    context = {'allmovies': allmovies}
+    return render(request, 'movie.html', context)

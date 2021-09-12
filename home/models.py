@@ -35,3 +35,14 @@ class Note(models.Model):
     def __str__(self):
         return self.head + ' --> ' + self.strap
     
+class Movie(models.Model):
+    head = models.CharField(max_length=15)
+    strap = models.CharField(max_length= 30)
+    desc = models.TextField()
+    date= models.DateField()
+    link = models.TextField()
+    image = models.TextField()
+
+    def __str__(self):
+        return self.head + ' --> ' + self.strap
+    

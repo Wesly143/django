@@ -12,24 +12,24 @@
  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 px-0 py-0 ">
         
 
-        {% for Program in alpost %}
+        {% for Movie in allpost %}
             <div class="col">
               <div class="card shadow-sm">
-                <img src="https://source.unsplash.com/1600x900/?{{Program.image}}">
+                <img src="https://source.unsplash.com/1600x900/?{{Movie.image}}">
 
                 <div class="card-body">
-                  <h3 class="text-center">{{Program.head}}</h3>
+                  <h3 class="text-center">{{Movie.head}}</h3>
                   ---------------------------------------------
-                  <h3 class="text-center">{{Program.strap}}</h3>
+                  <h3 class="text-center">{{Movie.strap}}</h3>
                   <p class="text-center"><b>
-                    {{Program.desc}}
+                    {{Movie.desc}}
                   </b></p>
                   <div class="d-flex justify-content-between align-items-center">
                     <div class="btn-group">
-                      <button type="button" class="btn btn-sm btn-outline-secondary"><a href="{{Program.link}}" target=”_blank”>View</a></button>
+                      <button type="button" class="btn btn-sm btn-outline-secondary"><a href="{{Movie.link}}" target=”_blank”>View</a></button>
                       
                     </div>
-                    <small class="text-muted">Updated: {{Program.date}}</small>
+                    <small class="text-muted">Updated: {{Movie.date}}</small>
                     
                   </div>
                 </div>
