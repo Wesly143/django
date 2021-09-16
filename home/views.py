@@ -4,6 +4,7 @@ from home.models import Contact
 from django.contrib import messages
 from home.models import Program
 from home.models import Note
+from home.models import Movie
 
 # Create your views here.
 def index(request):
